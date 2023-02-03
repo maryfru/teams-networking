@@ -1,0 +1,11 @@
+table {
+  width: 100%;
+}
+thead,
+tfoot {
+  background: rgb(160, 203, 160);
+}
+
+tbody {
+  background: rgb(200, 200, 166);
+}
