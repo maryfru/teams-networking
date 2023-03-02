@@ -16,7 +16,7 @@ function deleteTeamRequest(id) {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({ id })
-  });
+  }).then(r => r.json());
 }
 
 function displayTeams(teams) {
@@ -67,10 +67,7 @@ function initEvents() {
   document.querySelector("#teams tbody").addEventListener("click", e => {
     if (e.target.matches("a")) {
       const id = e.target.dataset.id;
-      const p = deleteTeamRequest(id);
-      console.warn("p", p);
-      p.then(r => r.json()).then(status => {
-        console.info("s", status);
+      deleteTeamRequest(id).then(status => {
         if (status.success) {
           window.location.reload();
         }
