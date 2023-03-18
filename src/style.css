@@ -17,10 +17,17 @@ body > section {
   padding: 15px;
 }
 
-table {
-  width: 100%;
+td,
+th {
   border: 1px solid black;
+  padding: 5px;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
 thead,
 tfoot {
   background: #1789fc;
@@ -28,6 +35,15 @@ tfoot {
 
 tbody {
   background: #f5f1ed;
+}
+
+tr:nth-child(even) {
+  background-color: #93c3f3;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
 }
 
 footer {
