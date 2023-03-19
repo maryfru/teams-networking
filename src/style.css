@@ -19,7 +19,7 @@ body > section {
 
 td,
 th {
-  border: 1px solid black;
+  border: 1px solid #296eb4;
   padding: 5px;
 }
 
@@ -41,9 +41,21 @@ tr:nth-child(even) {
   background-color: #93c3f3;
 }
 
+a {
+  color: #3a0ca3;
+}
+
+a:hover {
+  color: #d00000;
+}
+
 input {
   box-sizing: border-box;
   width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 footer {
@@ -75,3 +87,18 @@ h2 {
 
 /* ------ Classe`s ------
 --------------------- */
+.remove-btn {
+  color: #c9184a;
+}
+
+.remove-btn:hover {
+  cursor: pointer;
+}
+
+.edit-btn {
+  color: #136f63;
+}
+
+.edit-btn:hover {
+  cursor: pointer;
+}
