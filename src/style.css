@@ -1,0 +1,104 @@
+/* ------ Global ------
+----------------------- */
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #dad2bc;
+}
+
+body > section {
+  flex: 1;
+  padding: 15px;
+}
+
+td,
+th {
+  border: 1px solid #296eb4;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead,
+tfoot {
+  background: #1789fc;
+}
+
+tbody {
+  background: #f5f1ed;
+}
+
+tr:nth-child(even) {
+  background-color: #93c3f3;
+}
+
+a {
+  color: #3a0ca3;
+}
+
+a:hover {
+  color: #d00000;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background: #296eb4;
+  color: #fff;
+}
+
+/* ------ ID`s ------
+--------------------- */
+#header-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #296eb4;
+  color: #f5f1ed;
+}
+
+#header-wrapper h1,
+h2 {
+  margin-left: 10px;
+}
+#header-wrapper img {
+  border: 5px solid black;
+  border-radius: 10%;
+  margin: 5px;
+  background: #1789fc;
+}
+
+/* ------ Classe`s ------
+--------------------- */
+.remove-btn {
+  color: #c9184a;
+}
+
+.remove-btn:hover {
+  cursor: pointer;
+}
+
+.edit-btn {
+  color: #136f63;
+}
+
+.edit-btn:hover {
+  cursor: pointer;
+}
